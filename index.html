@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David's Personal Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="Javascript/script.js"></script> <!-- Add your JavaScript file -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to David's Personal Website</h1>
+        <p>Here you'll find out a couple of amazing things you need to know about David.
+            Including his projects, resume and basically his way of life as a developer.
+        </p>
+        <button onclick="changeText()">Click me</button> <!-- Example of JavaScript interaction -->
+    </main>
+    <main>
+        <section class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="Pictures/fa.jpg" alt="Image 1">
+                </div>
+                <div class="grid-item">
+                    <img src="Pictures/tata.jpg" alt="Image 2">
+                </div>
+                <!-- <div class="grid-item">
+                    <img src="Pictures/fa.jpg" alt="Image 3">
+                </div>
+                <div class="grid-item">
+                    <img src="Pictures/fa.jpg" alt="Image 3">
+                </div> -->
+                <!-- Add more grid items for your photos -->
+            </div>
+            <button onclick="shuffleGallery()">Shuffle</button>
+        </section>
+    
+        <section class="resume">
+            <h2>Resume</h2>
+            <div class="resume-container">
+                <!-- Your resume content here -->
+            </div>
+        </section>
+    
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                    <button onclick="showDetails('project1')">Show Details</button>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                    <button onclick="showDetails('project2')">Show Details</button>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+            <div id="project-details"></div>
+            
+        </section>
+    </main>
+    <footer>
+        
+        
+        <div class="comment-section">
+            <h3>Leave a Comment</h3>
+            <form id="comment-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="comment" placeholder="Your Comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="comments">
+                <!-- Comments will be dynamically added here -->
+            </div>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2023 DAVID BANDANA JUSU</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
