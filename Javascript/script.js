@@ -26,10 +26,7 @@ function showDetails(projectId) {
     const details = document.createElement('div');
     details.innerHTML = `
         <h4>Details of ${projectId}</h4>
-        //<p>Additional details about the project ${projectId} can be displayed here.</p>
-        <p>The tertiary management system is a desktop based development project which was developed using netbeans
-        IDE and Java as the High Level Programming Language. The Design is user-friendly and adaptive.</>
-
+        <p>Additional details about the project ${projectId} can be displayed here.</p>
     `;
 
     projectDetails.appendChild(details);
