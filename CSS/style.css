@@ -146,3 +146,9 @@ main {
     padding: 20px;
     border-radius: 5px;
 }
+.blog a{
+    font-family: Arial, sans-serif;
+    color: blue;
+    text-decoration: none;
+}
+
